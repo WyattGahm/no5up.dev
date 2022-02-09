@@ -1,0 +1,10 @@
+@font-face {
+    font-family: minecraftEnchanting;
+    src: url("https://hermatrix.net/minecraft-enchantment.ttf");
+}
+html,body {
+    margin: 0px !important;
+    padding: 0px !important;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
