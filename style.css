@@ -1,6 +1,6 @@
 @font-face {
     font-family: minecraftEnchanting;
-    src: url("https://hermatrix.net/minecraft-enchantment.ttf");
+    src: url('minecraft-enchantment.ttf');
 }
 html,body {
     margin: 0px !important;
@@ -8,6 +8,25 @@ html,body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
+#master {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#section {
+    margin: 20px;
+}
+
 /*
 html { height: 100%; }
 
@@ -41,7 +60,26 @@ h1 { font-size: 20vw; }
   }
 }
 */
+@font-face {
+    font-family: SourceCodePro-Bold;
+    src: url('SourceCodePro-Bold.ttf');
+}
+@font-face {
+    font-family: SourceCodePro-Regular;
+    src: url('SourceCodePro-Regular.ttf');
+}
+@font-face {
+    font-family: SourceCodePro-SemiBold;
+    src: url('SourceCodePro-SemiBold.ttf');
+}
 
+#section-title {
+    color: #FFF;
+    margin: 0;
+    font-family: SourceCodePro-Bold;
+    font-size: 3rem;
+    text-align: center;
+}
 
 .header {
 	font-family: Roboto Mono;
@@ -49,7 +87,7 @@ h1 { font-size: 20vw; }
 	font-weight:  100;
 	letter-spacing: 2px;
 	text-align: center;
-	color: #f35626;
+	color: #FFFFFF;
 	background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -68,7 +106,8 @@ h1 { font-size: 20vw; }
 button {
     background: rgba(0, 0, 0, 0.75);
     border: 2px solid;
-    font: inherit;
+    font: SourceCodePro-Regular;
+    font-size: 1em;
     line-height: 1;
     margin: 0.5em;
     padding: 1em 2em;
@@ -76,14 +115,14 @@ button {
 
 
 .raise:hover, .raise:focus {
-    box-shadow: 0 0.5em 0.5em -0.4em #ffa260;
+    box-shadow: 0 0.5em 0.5em -0.4em #ffFFFF;
     transform: translateY(-0.25em);
   }
   button {
-    color: #ffa260;
+    color: #ffffff;
     transition: 0.25s;
   }
   button:hover, button:focus {
-    border-color: #e5ff60;
-    color: #e5ff60;
+    border-color: #ffffff;
+    color: #ffffff;
   }
