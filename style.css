@@ -8,24 +8,7 @@ html,body {
     overflow-x: hidden;
     overflow-y: hidden;
 }
-#master {
-    position: absolute;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    margin: 0 auto;
-    justify-content: center;
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-#section {
-    margin: 20px;
-}
+
 
 /*
 html { height: 100%; }
@@ -80,7 +63,24 @@ h1 { font-size: 20vw; }
     font-size: 3rem;
     text-align: center;
 }
-
+#master {
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    justify-content: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#section {
+    margin: 20px;
+}
 .header {
 	font-family: Roboto Mono;
 	font-size: 6rem;
