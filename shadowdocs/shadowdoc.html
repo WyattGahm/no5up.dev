@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href="assets/images/favicon.png" rel="icon" />
+<title>Documentation | librelic 2.1</title>
+
+<!-- Stylesheet
+============================== -->
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/bootstrap/css/bootstrap.min.css" />
+<!-- Font Awesome Icon -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/font-awesome/css/all.min.css" />
+<!-- Magnific Popup -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/magnific-popup/magnific-popup.min.css" />
+<!-- Highlight Syntax -->
+<link rel="stylesheet" type="text/css" href="assets/vendor/highlight.js/styles/github.css" />
+<!-- Custom Stylesheet -->
+<link rel="stylesheet" type="text/css" href="assets/css/stylesheet.css" />
+</head>
+
+<body data-spy="scroll" data-target=".idocs-navigation" data-offset="125">
+
+<!-- Preloader -->
+<div class="preloader">
+  <div class="lds-ellipsis">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Preloader End --> 
+
+<!-- Document Wrapper   
+=============================== -->
+<div id="main-wrapper"> 
+  
+  <!-- Header
+  ============================ -->
+  <header id="header" class="sticky-top"> 
+    <!-- Navbar -->
+    <nav class="primary-menu navbar navbar-expand-lg bg-dark navbar-text-light navbar-dropdown-dark border-0">
+      <div class="container-fluid">
+        <!-- Sidebar Toggler -->
+		<button id="sidebarCollapse" class="navbar-toggler d-block d-md-none" type="button"><span></span><span class="w-75"></span><span class="w-50"></span></button>
+		
+		<!-- Logo --> 
+        <a class="logo ml-md-3" href="index.html" title="iDocs Template"> <img src="assets/images/logo-light.png" alt="iDocs Template"/> </a> 
+		<span class="text-2 text-light ml-2">librelic v2.1</span> 
+        <!-- Logo End -->
+        
+		<!-- Navbar Toggler -->
+		<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#header-nav"><span></span><span></span><span></span></button>
+        
+		<div id="header-nav" class="collapse navbar-collapse justify-content-end">
+          
+      </div>
+    </nav>
+    <!-- Navbar End --> 
+  </header>
+  <!-- Header End --> 
+  
+  <!-- Content
+  ============================ -->
+  <div id="content" role="main">
+    
+	<!-- Sidebar Navigation
+	============================ -->
+	<div class="idocs-navigation bg-light">
+      <ul class="nav flex-column ">
+        <li class="nav-item"><a class="nav-link active" href="#idocs_start">Adopting librelic 2.1</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_linking">Linking</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_limits">Limitations</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link active" href="#idocs_usage">Usage</a>
+          <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#idocs_relichookmessage">RelicHookMessage</a></li>
+            <li class="nav-item"><a class="nav-link" href="#idocs_relichookmessageex">RelicHookMessageEx</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link" href="#idocs_source_credits">Source & Credits</a></li>
+        
+		<li class="nav-item"><a class="nav-link" href="#idocs_changelog">Changelog</a>
+			<ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link" href="#v1">v2.x (MK2)</a></li>
+            <li class="nav-item"><a class="nav-link" href="#v2">v1.x (MK1)</a></li>
+          </ul>
+		</li>
+      </ul>
+    </div>
+    
+    <!-- Docs Content
+	============================ -->
+    <div class="idocs-content">
+      <div class="container"> 
+        
+        <!-- Getting Started
+		============================ -->
+        <section id="idocs_start">
+        <h1>Documentation</h1>
+        <h2>librelic 2.0 documentation</h2>
+        <p class="lead">A document describing the usage of librelic, a private substrate-style hooking detection bypass tool, for other developers to support</p>
+		<hr>
+		<div class="row">
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+					<li><strong>Version:</strong> 2.1</li>
+					<li><strong>Author:</strong> <a href="https://no5up.dev" target="_blank">Wyatt Gahm</a></li>
+				</ul>
+			</div>
+			<div class="col-sm-6 col-lg-4">
+				<ul class="list-unstyled">
+					<li><strong class="font-weight-700">Created:</strong> 8 April, 2020</li>
+					<li><strong>Update:</strong> 12 May, 2020</li>
+				</ul>
+			</div>
+		</div>
+        <p class="alert alert-info">This is a private library. The code/binary is not provided, just information about how to support it.</p>
+        </section>
+        
+		<hr class="divider">
+
+    <section id="idocs_linking">
+      <h2>Linking</h2>
+      <p class="lead">How to add librelic support to a tweak:</p>
+      
+        <li>Find and download the <code>relic.h</code> file and add it to your project.</li>
+        <li>Linking any other way would cause faults in detection and unwanted issues</li>
+        <li>Try <code>#import "relic.h"</code>!</li>
+      
+    </section>
+
+    <section id="idocs_limits">
+      <h2>Limitations</h2>
+      <p class="lead">What does it work for? what are the limits?</p>
+      
+        <li>Arm64 is supported, so arm64e is too. Thats iPhone 6 and newer... Armv7 is just too old sorry :/</li>
+        <li>Undetected as of Snapchat 11.74 and some other apps.</li>
+      
+    </section>
+
+    <hr class="divider">
+    <section id="idocs_usage">
+      <h2>Layout</h2>
+      <p class="lead mb-5">Documentation and examples for header, navbar, sidebar, footer</p>
+    </section>
+
+    <section id="idocs_relichookmessage">
+      <h2>Hooking methods without an original function assignment</h2>
+      <p class="lead"><code>RelicHookMessageEx(Class cls, SEL sel, void *newcode)</code></p>
+        <li>It is suggested to write your <code>newcode</code> in C, see the example for a demo with one objc arg</li>
+        <li>Can be used to hook functions without assigning an orig_ function</li>
+        <li>Note that this can be used to add code as well, and implement class and metaclass methods</li>
+        <li>Example:</li>
+        <pre><code>void newfunc(id self, SEL _cmd, id arg1){
+  NSLog(@"Selector hit! Code addition/hooking working!");
+}
+__attribute__((constructor)) void loadcode{
+  RelicHookMessage(objc_getClass("MyClass"),@selector(newFunc:),(void *)newfunc);
+} </code></pre>
+        <p class="alert alert-info">May have some issues loading more than 6 args (not including self and _cmd)</p>
+        <p class="alert alert-info">Crash issues may result from objc_retain. Turn off ARC or cast them correctly in the function!</p>
+      
+    </section>
+
+    <section id="idocs_relichookmessageex">
+      <h2>Hooking methods (with orig callback)</h2>
+      <p class="lead"><code>RelicHookMessageEx(Class cls, SEL sel, void *newcode, void *oldcode)</code></p>
+      
+      <li>Can be used to hook functions with assigning an orig_ function</li>
+      <li>Note that this can be used in theos if you can edit the perl scripts</li>
+      <li>Basically a stand in for MSHookMessageEx</li>
+        <li>Example:</li>
+        <pre><code>void (*orig_func)(id self, SEL _cmd, id arg1);
+void func(id self, SEL _cmd, id arg1){
+  NSLog(@"Selector hit! Code hooking working! Calling original!");
+  orig_func(self, _cmd, arg1);
+}
+__attribute__((constructor)) void loadcode{
+  RelicHookMessageEx(objc_getClass("MyClass"),@selector(pizzahut:),(void *)func, &orig_func);
+}</code></pre>
+        <p class="alert alert-info">May have some issues loading more than 6 args (not including self and _cmd)</p>
+        <p class="alert alert-info">Crash issues may result from objc_retain. Turn off ARC or cast them correctly in the function!</p>
+    </section>
+
+
+
+        <!-- Source & Credits
+		============================ -->
+        <section id="idocs_source_credits">
+          <h2>Source & Credits</h2>
+          <h4>Template:</h4>
+          <ul>
+            <li>iDocs- <a target="_blank" href="https://github.com/harnishdesign/iDocs">Harnish Design</a></li>
+          </ul>
+		  <h4>Fonts:</h4>
+          <ul>
+            <li>Icons Font Face - <a target="_blank" href="https://fontawesome.com/">https://fontawesome.com/</a></li>
+          </ul>
+          <h4>Scripts:</h4>
+          <ul>
+            <li>jQuery - <a target="_blank" href="http://www.jquery.com/">http://www.jquery.com/</a></li>
+            <li>Bootstrap 4 - <a target="_blank" href="http://getbootstrap.com/">http://getbootstrap.com/</a></li>
+			<li>Highlight Js - <a target="_blank" href="https://highlightjs.org/">https://highlightjs.org/</a></li>
+			<li>jQuery easing - <a target="_blank" href="http://gsgd.co.uk/sandbox/jquery/easing/">http://gsgd.co.uk/sandbox/jquery/easing/</a></li>
+            <li>Magnific Popup - <a target="_blank" href="http://dimsemenov.com/plugins/magnific-popup/">http://dimsemenov.com/plugins/magnific-popup/</a></li>
+          </ul>
+        </section>
+        
+		<hr class="divider">
+		
+		
+        <section id="idocs_changelog">
+          <h2>Changelog</h2>
+          <p class="text-4">See what's new added, changed, fixed, improved or updated in the latest version. </p>
+		  <p class="alert alert-info mb-5"> For Future Updates Follow Me <a target="_blank" href="https://mobile.twitter.com/no5up_">@no5up</a> </p>
+          
+		  <h3 id="v1-1">Version 1.1 <small class="text-muted">(IDK WHEN)</small></h3>
+          <ul class="changelog">
+            <li><span class="badge badge-success">Added</span> FIX THIS</li>
+            <li><span class="badge badge-danger">Fixed</span> FIX THIS</li>
+			<li><span class="badge badge-danger">Fixed</span> FIX THIS</li>
+            <li><span class="badge badge-info">Updated</span> FIX THIS</li>
+			<li><span class="badge badge-info">Updated</span> FIX THIS</li>
+			<li><span class="badge badge-info">Updated</span> FIX THIS</li>
+          </ul>
+		  
+		  <hr class="divider">
+		  
+          <h3 id="v1-0">Version 1.0 <small class="text-muted">(IDK WHEN)</small></h3>
+          <p>Initial Release</p>
+        </section>        
+        
+      </div>
+    </div>
+	
+  </div>
+  <!-- Content end --> 
+  
+  <!-- Footer
+  ============================ -->
+  <footer id="footer" class="section bg-dark footer-text-light">
+    <div class="container">
+      <ul class="social-icons social-icons-lg social-icons-muted justify-content-center mb-3">
+        <li><a data-toggle="tooltip" href="https://twitter.com/no5up_/" target="_blank" title="" data-original-title="Twitter"><i class="fab fa-twitter"></i></a></li>
+        <li><a data-toggle="tooltip" href="https://github.com/WyattGahm" target="_blank" title="" data-original-title="GitHub"><i class="fab fa-github"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Footer end -->
+  
+</div>
+<!-- Document Wrapper end --> 
+
+<!-- Back To Top --> 
+<a id="back-to-top" data-toggle="tooltip" title="Back to Top" href="javascript:void(0)"><i class="fa fa-chevron-up"></i></a> 
+
+<!-- JavaScript
+============================ -->
+<script src="assets/vendor/jquery/jquery.min.js"></script> 
+<script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script> 
+<!-- Highlight JS -->
+<script src="assets/vendor/highlight.js/highlight.min.js"></script> 
+<!-- Easing --> 
+<script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script> 
+<!-- Magnific Popup --> 
+<script src="assets/vendor/magnific-popup/jquery.magnific-popup.min.js"></script> 
+<!-- Custom Script -->
+<script src="assets/js/theme.js"></script>
+</body>
+</html>
