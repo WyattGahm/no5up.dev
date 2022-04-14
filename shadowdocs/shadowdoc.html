@@ -138,6 +138,9 @@
       
         <li>Arm64 is supported, so arm64e is too. Thats iPhone 6 and newer... Armv7 is just too old sorry :/</li>
         <li>Undetected as of Snapchat 11.74 and some other apps.</li>
+        <li>It is fundamentally impossible to detect without calling the hooked method. <code>dlsym()</code> will not work...</li>
+        <li>Additionally added methods will not show up when calling <code>class_copyMethodList()</code></li>
+        <li>There are more examples but the point is that librelic hides your code almost perfectly.</li>
       
     </section>
 
@@ -219,12 +222,10 @@ __attribute__((constructor)) void loadcode{
           
 		  <h3 id="v1-1">Version 2.1 <small class="text-muted">(IDK WHEN)</small></h3>
           <ul class="changelog">
-            <li><span class="badge badge-success">Added</span> FIX THIS</li>
-            <li><span class="badge badge-danger">Fixed</span> FIX THIS</li>
-			<li><span class="badge badge-danger">Fixed</span> FIX THIS</li>
-            <li><span class="badge badge-info">Updated</span> FIX THIS</li>
-			<li><span class="badge badge-info">Updated</span> FIX THIS</li>
-			<li><span class="badge badge-info">Updated</span> FIX THIS</li>
+            <li><span class="badge badge-success">Patched Detection</span> ...</li>
+            <li><span class="badge badge-danger">Cannot be linked with (dlopen() only)</span> ...</li>
+			      <li><span class="badge badge-danger">Springboard Injection patch</span> ...</li>
+            <li><span class="badge badge-info">Removed Obfuscation</span>...</li>
           </ul>
 		  
 		  <hr class="divider">
