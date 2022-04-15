@@ -144,6 +144,15 @@
       
     </section>
 
+    <section id="idocs_help">
+      <h2>Help</h2>
+      <p class="lead">I just made a tweak and I want to support relic users. How do I do that????</p>
+        <li>You can modify your installation of Logos. I dont personally suggest this but you dont even need to know perl. Pure skid shit just find refs to <code>MSHookMessageEx</code> and just throw relic in there. You may have to make some casts though...</li>
+        <li>Alternatively you can run your code through Logos then you have the source in C/C++/ObjC. At that point you can make a macro to replace <code>MSHookMessageEx</code> with <code>RelicHookMessageEx</code>. To run your .xm's through Logos just run <code>logos.pl Tweak.xm</code> in the build dir.</li>
+        <li>Both of these options get a little more tricky if you have  <code>%new</code> methods. You CANNOT just leave this they will get detected in a snap (pun intended). Use  <code>MSHookMessage</code> instead. It has better support for avoiding class method lists.</li>
+      
+    </section>
+
     <hr class="divider">
     <section id="idocs_usage">
       <h2>Usage</h2>
