@@ -32,6 +32,15 @@ html, body {
     text-align: center;
 }
 
+#section-text {
+    color: #FFF;
+    margin: 0;
+    font-family: SourceCodePro-Regular;
+    font-size: 2rem;
+    text-align: center;
+}
+
+
 #master {
     position: absolute;
     z-index: 1;
